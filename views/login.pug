@@ -1,0 +1,24 @@
+extends layout
+block content
+    .container
+      .row
+        .col-lg-8.col-xl-6.mx-auto
+          .card.card-signin.flex-row.my-4.shadow
+            .card-body.mx-auto
+            form.form-signin(action='?' method='post')
+                h1 Login
+                hr
+                .input-section
+                  label(for='email')
+                    b Username
+                  input(type='text' placeholder='Enter Username' name='username' required='')
+                .input-section
+                  label(for='psw')
+                    b Password
+                  input(type='password' placeholder='Enter Password' name='psw' required='')
+                  br
+                .clearfix
+                  button.mx-2(type='submit' name='submit') Login
+                .input-section
+                  small.text-center
+                    a(href='#' style='color:dodgerblue') Forgot my password

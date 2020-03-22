@@ -1,0 +1,49 @@
+extends layout
+block content
+  -var recipeArr = JSON.parse(recipes)
+  -var dietArr = JSON.parse(diets);
+  .container.my-4
+    // Jumbotron Header
+    .jumbotron.jumbotron-fluid
+      video(autoplay='' muted='' loop='' poster='https://dummyimage.com/900x400/000/fff')
+        source(src='' data-src='/videos/1021335946-preview.mp4' type='video/mp4')
+      .container.text-white.mx-auto
+        h1.display-3.text-center.font2 Search Recipes
+        form(action='/search' method='post')
+          .input-group.mx-auto
+            span.input-group-append
+              button.btn.btn-outline-secondary.border.border-right-0.dropdown-toggle.custom-colors(data-toggle='dropdown' type='buttton')
+                | Filters
+              ul.dropdown-menu.shadow
+                h5.dropdown-header Diet
+                each diet in dietArr
+                  li.dropdown-item
+                    .form-check
+                      label.form-check-label(for=diet.name)
+                      input.form-check-input(type='checkbox' name='diets' value=diet.name id=diet.name)
+                      | #{diet.name}
+            input#searchBar.form-control.border.border-right-0(type='text' placeholder='Search...' name='searchWord')
+            span.input-group-append
+              button#search.btn.btn-outline-secondary.border.border-left-0.custom-colors(type="submit" name="submit" value="Submit")
+                i.fas.fa-search.fa-sm
+    .row
+      each recipe in recipeArr
+        .col-lg-3.col-md-6.mb-4
+          .card.h-100.shadow.custom-colors
+            img.card-img-top(src=recipe.imgUrl alt='https://dummyimage.com/500x325/000/fff')
+            .card-body
+              a(href='/viewRecipe/?id=' + recipe.ID)
+                h4.card-title.text-center #{recipe.title}
+              .text-center
+                span.rating.small-gold(data-default-rating=recipe.rating disabled)
+              p.card-text
+                | 
+                br
+                | Calories per serving: #{recipe.caloriesPerServing}
+                br
+                | Time: #{recipe.time} min.
+                br
+                | Servings: #{recipe.servings}
+
+
+

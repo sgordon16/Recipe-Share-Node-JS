@@ -1,0 +1,70 @@
+doctype html
+html
+  head
+    block header
+      meta(charset='utf-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+      meta(name='description' content='')
+      title #{title}
+      link(href='/vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet')
+      link(href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed' rel='stylesheet')
+      link(href='/SimpleStarRating-master/SimpleStarRating.css' rel='stylesheet')
+      link(href='/css/style.css' rel='stylesheet')
+      script(src='/vendor/jquery/jquery.min.js')
+      script(src='/vendor/bootstrap/js/bootstrap.bundle.min.js')
+      script(src='https://kit.fontawesome.com/a076d05399.js')
+      script(src='/SimpleStarRating-master/SimpleStarRating.js')
+      script(src='/js/script.js')
+      script(src='/js/StarRating.js')
+  body
+    block menu 
+      nav.navbar.navbar-expand-lg.nav-fill.custom-colors.fixed-top.shadow
+          a.navbar-brand.mx-5(href='/home')
+              img(src='/recipeShareLogo.png' alt='' height='50' width='100')
+          button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+              span.navbar-toggler-icon
+          #navbarResponsive.collapse.navbar-collapse
+              .nav.navbar-nav.custom-colors.mx-auto
+                  a.nav-link.nav-item.ml-lg-1(href='/home')
+                    | Search Recipes
+                    //- i.fas.fa-search.fa-sm.ml-lg-2(aria-hidden='true')
+                  a.nav-link.nav-item.ml-lg-5(href='/culinaryTips')
+                    | Culinary Tips
+                    //- i.fas.fas.fa-utensils.fa-sm.ml-lg-2(aria-hidden='true')
+                  a.nav-link.nav-item.ml-lg-5(href='/recipeForm')
+                    | Upload Recipe
+                  a.nav-link.nav-item.ml-lg-5(href='/about')
+                    | About Us
+                  a.nav-link.nav-item.ml-lg-5(href='/contact')
+                    | Contact Us
+              .nav.navbar-nav.custom-colors.navbar-right
+                  a.nav-link.nav-item.ml-lg-5(href="") 
+                    | Login
+                    i.fas.fa-user.fa-sm.ml-lg-2(aria-hidden="true")
+    block content
+    block footer
+      footer.page-footer.font-small.pt-4.custom-colors
+        .container-fluid.text-center.text-md-left
+          .row
+            .col-md-6.mt-md-0.mt-3.center-block.text-center
+                a.fab.fa-facebook-square.fa-2x.ml-lg-4(href='https://facebook.com')
+                a.fab.fa-twitter.fa-2x.ml-lg-4(href='https://twitter.com')
+                a.fab.fa-google-plus-g.fa-2x.ml-lg-4(href='#')
+                a.fab.fa-youtube.fa-2x.ml-lg-4(href='https://youtube.com')
+                a.fab.fa-instagram.fa-2x.ml-lg-4(href='https://instagram.com')
+                a.fab.fa-pinterest.fa-2x.ml-lg-4(href='https://pinterest.com')
+            hr.clearfix.w-100.d-md-none.pb-3
+            .col-md-3.mb-md-0.mb-3
+                ul.list-unstyled
+                  li
+                      a(href='/about') About Us
+                  li
+                      a(href='#!') Support
+            .col-md-3.mb-md-0.mb-3
+                ul.list-unstyled
+                  li
+                      a(href='#!') Subscribe
+                  li
+                      a(href='/contact') Contact Us
+        .footer-copyright.text-center.text-white.py-3
+          | Copyright &copy; MyMealPlanner.com 2019

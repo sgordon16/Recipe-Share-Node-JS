@@ -1,0 +1,281 @@
+:root {
+  --main-bg-color: #fcd5ac;
+}
+body {
+  font-family: 'IBM Plex Sans Condensed', sans-serif !important;
+  background-color: #c6f776;
+  padding-top: 56px;
+}
+a, button {
+  color: #5f8e13;
+  position: relative !important;
+}
+ 
+a.custom-colors:hover, a.custom-colors:focus,
+a:hover, a:focus {
+  color: #91d622;
+}
+.panel-text {
+  font-family: 'Coustard', serif;
+  display: block;
+}
+.custom-colors {
+  color: #5f8e13;
+  background-color: var(--main-bg-color) !important;
+}
+button.custom-colors {
+    background-color: #c6f776 !important;	
+    border-color: #666666;
+}
+
+.navbar .shadow {
+    box-shadow: 0px 4px;
+}
+.card .h-100 {
+    position: relative !important;	
+}
+button:hover, button:focus,
+button.custom-colors:hover,
+button.custom-colors:focus {
+  background-color: #c6f776 !important;
+}
+
+.custom-colors .navbar-brand {
+  color: #5f8e13;
+}
+
+.custom-colors .navbar-nav .nav-link {
+  color: #5f8e13;
+}
+
+.custom-colors .navbar-nav .nav-link:hover, .custom-colors .navbar-nav .nav-link:focus {
+  box-shadow: 1px 1px 1px 1px;
+  border-radius: 5px;
+}
+
+.custom-colors .navbar-nav .nav-link.disabled {
+  color: rgba(95,142,19, 0.25);
+}
+
+.custom-colors .navbar-nav .show > .nav-link,
+.custom-colors .navbar-nav .active > .nav-link,
+.custom-colors .navbar-nav .nav-link.show,
+.custom-colors .navbar-nav .nav-link.active {
+  color: #91d622;
+}
+
+.custom-colors .navbar-toggler {
+  color: rgba(95,142,19, 0.5);
+  border-color: rgba(95,142,19, 0.1);
+}
+
+.custom-colors .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.custom-colors .navbar-text {
+  color: #5f8e13;
+}
+
+.custom-colors .navbar-text a {
+  color: #5f8e13;
+}
+
+.custom-colors .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
+  color: #91d622;
+}
+.btn-custom {
+  color: #5f8e13;
+  background-color: #c6f776;
+  border-color: #5f8e13;
+  box-shadow: 1px 1px #5f8e13;
+}
+
+.btn-custom:hover {
+  background-color: #91d622;
+}
+
+
+.btn-custom:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem;
+  border-color: #5f8e13;
+}
+
+#categories {
+  text-shadow: none;	
+  width: 350px;
+}
+table, thead, tbody, td, tr, th {
+	border-color: #5f8e13 !important;
+}
+
+.input-group {
+  width:75%;
+  font-family: 'IBM Plex Sans Condensed', sans-serif !important;
+  
+}
+input.form-control {
+	width: 100%;
+	background-color: rgba(198, 247, 120, 0.5) !important;
+}
+.dropdown-submenu {
+  position: relative;
+  text-shadow: none;
+}
+
+.dropdown-submenu .dropdown-menu {
+	z-index: 2;
+}
+
+ .dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active  {
+	background-color: #c6f776 !important;
+}
+.dropdown-item .dropdown-submenu, .dropdown-item .dropdown-submenu:hover, .dropdown-item .dropdown-submenu:focus,
+.dropdown-item .dropdown-submenu:active{
+	background-color: #c6f776 !important;
+}
+
+/* Full-width input fields */
+.modal-input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  /*float: left;*/
+  width: 25%;
+  padding: 10px 14px;
+  margin: 2px;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.75);
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+.dropdown-toggle::after { 
+	content: none;         
+}
+.footer-copyright {
+    background-color: #ffb363;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+.fab:hover {
+    text-shadow: 3px 3px 3px 3px;
+    text-decoration: none;
+    opacity: 0.7;
+}
+.jumbotron {
+  position: relative;
+  /*overflow: hidden;*/
+  background-color:black;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0.3rem;
+}
+.jumbotron video {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width:100%;
+  height:100%;
+  /*  object-fit is not supported on IE  */
+  object-fit: cover;
+  opacity: 3;
+  border-radius: 0.3rem;
+}
+.jumbotron .container {
+  z-index: 2;
+  position: relative;
+}
+#searchBar::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+.font2{
+  text-shadow: 2px 2px 4px var(--main-bg-color);
+}
+.big-gold{
+  color: #F0C402;
+  font-size: 30px;
+}
+.small-gold{
+  color: #F0C402;
+}
+.card-signin {
+  border-radius: 0.5rem;
+}
